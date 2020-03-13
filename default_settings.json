@@ -1,40 +1,34 @@
 {
     "public":{
-        "chainName": "Cosmos Testnet",
-        "chainId": "{Chain ID}",
-        "gtm": "{Add your Google Tag Manager ID here}",
+        "chainName": "Kontraua Testnet",
+        "chainId": "kontraua",
+        "gtm": "GTM-NZGZCGD",
         "slashingWindow": 10000,
         "uptimeWindow": 250,
         "initialPageSize": 30,
-        "bech32PrefixAccAddr": "cosmos",
-        "bech32PrefixAccPub": "cosmospub",
-        "bech32PrefixValAddr": "cosmosvaloper",
-        "bech32PrefixValPub": "cosmosvaloperpub",
-        "bech32PrefixConsAddr": "cosmosvalcons",
-        "bech32PrefixConsPub": "cosmosvalconspub",
-        "bondDenom": "uatom",
+        "bech32PrefixAccAddr": "xrn:",
+        "bech32PrefixAccPub": "xrn:pub",
+        "bech32PrefixValAddr": "xrn:valoper",
+        "bech32PrefixValPub": "xrn:valoperpub",
+        "bech32PrefixConsAddr": "xrn:valcons",
+        "bech32PrefixConsPub": "xrn:valconspub",
+        "bondDenom": "utree",
         "powerReduction": 1000000,
         "coins": [
             {
-                "denom": "uatom",
-                "displayName": "ATOM",
-                "displayNamePlural": "ATOMS",
-                "fraction": 1000000
-            }, 
-            {
-                "denom": "umuon",
-                "displayName": "MUON",
-                "displayNamePlural": "MUONS",
+                "denom": "utree",
+                "displayName": "TREE",
+                "displayNamePlural": "TREE",
                 "fraction": 1000000
             } 
         ],
         "gasPrice": 0.02,
         "coingeckoId": "cosmos"
     },
-    "genesisFile": "{Replace the address of the genesis file of the chain}",
+    "genesisFile": "https://raw.githubusercontent.com/regen-network/testnets/master/kontraua/genesis.json",
     "remote":{
-        "rpc":"https://gaia-seeds.interblock.io",
-        "lcd":"https://gaia-seeds.interblock.io:1317"
+        "rpc":"https://regen-rpc.vitwit.com",
+        "lcd":"https://regen-lcd.vitwit.com"
     },
     "debug": {
         "startTimer": true,
